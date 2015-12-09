@@ -44,7 +44,10 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
+
 // CchatclientDlg 对话框
+
+
 
 CchatclientDlg::CchatclientDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(IDD_CHATCLIENT_DIALOG, pParent)
@@ -151,6 +154,18 @@ HCURSOR CchatclientDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
+
+
+
+
+
+
+//void CchatclientDlg::AssertValid() const
+//{
+//	CDialogEx::AssertValid();
+//
+//	// TODO: 在此添加专用代码和/或调用基类
+//}
 
 
 void CchatclientDlg::OnBnClickedBtnSend()

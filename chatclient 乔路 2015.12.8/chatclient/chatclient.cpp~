@@ -59,6 +59,7 @@ BOOL CchatclientApp::InitInstance()
 	// 不需要的特定初始化例程
 	// 更改用于存储设置的注册表项
 	// TODO: 应适当修改该字符串，
+	// 例如修改为公司或组织名
 	SetRegistryKey(_T("Chatclient"));
 
 	m_pSocket = new Clientsocket();
@@ -116,6 +117,7 @@ BOOL CchatclientApp::InitInstance()
 	}
 
 	// 由于对话框已关闭，所以将返回 FALSE 以便退出应用程序，
+	//  而不是启动应用程序的消息泵。
 	return FALSE;
 }
 
